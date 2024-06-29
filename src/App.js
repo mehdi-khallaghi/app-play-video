@@ -1,9 +1,9 @@
-import './App.css';
+import Movie from './components/movie/movieComponent'
 
 function App() {
   return (
     <div className="App">
-     sss
+      <Movie />
     </div>
   );
 }
