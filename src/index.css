@@ -1,6 +1,50 @@
-/*css code*/
+/*reset code*/
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  direction: rtl;
+}
+
+.App{
+  background: rgb(246, 245, 245);
+}
+.input-search {
+  width: 300px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  height: 2.5rem;
+  padding: 10px;
+  box-shadow: 4px 4px 6px 3px rgb(209, 206, 206) inset;
+}
+.card {
+  margin-bottom: 30px;
+}
+.card:hover {
+  box-shadow: 4px 4px 6px 6px rgb(212, 211, 211) ;
+}
+.des {
+  color:rgb(111, 110, 114);
+}
+.des-item{
+  margin-top: 10px;
+  background-color: rgb(226, 222, 222);
+
+}
+.footer {
+  background-color: rgb(147, 147, 191);
+  position: fixed; /* change from relative to fixed */
+  bottom: 0;
+  width: 100%; /* add this to make the footer full-width */
+  height:30px; /* adjust the height to your liking */
+  z-index: 1; /* add this to ensure the footer is on top of other elements */
+
+}
+
+.btn-counter {
+  text-decoration: none;
+  margin-left: 20px;
+  color:red;
 }

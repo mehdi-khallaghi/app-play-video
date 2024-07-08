@@ -1,15 +1,16 @@
-export default function ({ img, title, year }) {
+import { Link } from "react-router-dom";
+export default function ({ img, title, year,des,id }) {
     return (
         <div className='col-sm-3 my-2'>
-            <div className="card">
+            <div className="card bg-white">
                 <img src={img} className="card-img-top" alt="Movie5" />
                 <div className="card-body">
                     <h4 className="card-title">{title}</h4>
                     <p className="card-text">
                         <h5>{year}</h5>
-                        Some quick example text to build on the card title
-                        and make up the bulk of the card's content.
+                        <span className="des">{des}</span>
                     </p>
+                    <Link to={"movie-detail/"+id} className="detail-link">جزییات بیشتر</Link>
                 </div>
             </div>
         </div>
