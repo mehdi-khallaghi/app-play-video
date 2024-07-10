@@ -9,7 +9,7 @@ export default function UserComponent(){
             {userList.map((usr)=>{
                 return (
                 <div className="p-2 mt-2 rounded bg-warning">
-                    <h4>{usr.username} - {usr.name}</h4>
+                    <h4>{usr.username} - {usr.name} - {usr.id}</h4>
                 </div>
                 )
             })}

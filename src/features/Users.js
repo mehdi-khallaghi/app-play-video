@@ -6,7 +6,7 @@ export const userSlice = createSlice({
     initialState:{value:usersData},
     reducers:{
        
-    }
+    },
 });
 
 export default userSlice.reducer;
