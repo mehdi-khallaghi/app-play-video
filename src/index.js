@@ -11,6 +11,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import rootRaducers from './components/Redux/reducers';
 import Users, { userSlice } from './features/Users';
 import  useReducer  from './features/Users';
+import movieRaducer from './features/movie'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -18,6 +19,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 const store = configureStore({
   reducer:{
     users:useReducer,
+    movies : movieRaducer
   }
 });
 

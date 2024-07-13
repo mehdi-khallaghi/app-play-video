@@ -48,3 +48,27 @@
   margin-left: 20px;
   color:rgb(255, 230, 2);
 }
+.input-adduser{
+  width: 300px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  height: 2.5rem;
+  padding: 10px;
+  box-shadow: 4px 4px 6px 3px rgb(209, 206, 206) inset;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.input-adduser2{
+  width: 200px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  height: 2.5rem;
+  padding: 10px;
+  box-shadow: 4px 4px 6px 3px rgb(209, 206, 206) inset;
+  margin-left: 10px;
+  margin-right: 10px;
+}
