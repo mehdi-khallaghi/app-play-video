@@ -43,10 +43,13 @@
 
 }
 
-.btn-counter {
+.btn-counter,.detail-link {
   text-decoration: none;
   margin-left: 20px;
   color:rgb(255, 230, 2);
+}
+.detail-link:hover {
+   color:rgb(69, 2, 255);
 }
 .input-adduser{
   width: 300px;

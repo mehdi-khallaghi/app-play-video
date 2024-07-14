@@ -61,12 +61,13 @@ const Movie = () => {
                     {loading ? <p className="loading">درحال دریافت داده می باشیم لطفا منتظر بمانید...</p> :
 
                         data ? data.map((i, index) => <Item
-                            key={index}
-                            img={i.movie_img}
-                            title={i.movie_name}
-                            year={i.year}
-                            des={i.movie_des}
-                            id={i.objectId} />) : null
+                                                        key={index}
+                                                        img={i.movie_img}
+                                                        title={i.movie_name}
+                                                        year={i.year}
+                                                        des={i.movie_des}                           
+                                                        id={i.objectId} />
+                                    ) : null
                     }
                 </div>
             </div>
