@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { baseUrl, config } from "../../constants/Api";
 import axios from "axios";
 
-export function MovieDetail() {
+export default function MovieDetail() {
 
     const param = useParams();
     console.log(param);

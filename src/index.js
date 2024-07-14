@@ -10,16 +10,16 @@ import { configureStore } from '@reduxjs/toolkit';
 // import { createStore } from 'redux';
 import rootRaducers from './components/Redux/reducers';
 import Users, { userSlice } from './features/Users';
-import  useReducer  from './features/Users';
+import useReducer from './features/Users';
 import movieRaducer from './features/movie'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // const store = createStore(rootRaducers);
 const store = configureStore({
-  reducer:{
-    users:useReducer,
-    movies : movieRaducer
+  reducer: {
+    users: useReducer,
+    movies: movieRaducer
   }
 });
 
@@ -31,6 +31,24 @@ root.render(
   </Provider>
 
 );
+
+//------------service worker--------------------------------
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register('/sw.js').then((res) => {
+    if (res.installing) {
+      console.log('installing')
+    }
+    if (res.waiting) {
+      console.log('waiting')
+    }
+    if (res.active) { 
+      console.log('active')
+    }
+  }).catch(rej => {
+    console.log('register has error')
+  })
+}
+//----------------------------------------------------------
 
 
 reportWebVitals();
