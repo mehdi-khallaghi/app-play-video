@@ -36,10 +36,10 @@ self.addEventListener("install",function(event){
 //     )
 // });
 
+
+
+
 //chat liama 3
-
-
-
 self.addEventListener('fetch', function(event) {  
   event.respondWith(  
     caches.open(dynamicCache)  

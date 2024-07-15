@@ -17,7 +17,7 @@ export const userSlice = createSlice({
                     user.username = action.payload.username;
                 }
             })
-        },
+        }
     },
 
 });

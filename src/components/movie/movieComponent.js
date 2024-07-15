@@ -31,9 +31,8 @@ import { fetchMovie } from '../../features/movie'
 const Movie = () => {
 
     const dispatch = useDispatch()
+   
     let data = useSelector(state => state?.movies?.movieList);
-
-
 
     const loading = useSelector(state => state?.movies?.loading)
 

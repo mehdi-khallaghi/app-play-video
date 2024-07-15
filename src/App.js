@@ -20,8 +20,8 @@ const Loader = lazy(() => import("./components/spinner/Spinner"));
 function App() {
   return (
     <div className="App">
-      <Suspense fallback={<Loader/>}>
-        <BrowserRouter>
+      <Suspense fallback={<Loader />}>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Routes>
             <Route path="/" exact element={<Movie />} />
             <Route path="/movie-detail/:id" element={<MovieDetail />} />
